@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+    <div id="app-content">
+        <div class="project-panel">
+            <div class="project-header">Projects</div>
+            <div class="projects-container">
+              
+            </div>
+            <div class="add-project-button">Add Project</div>
+        </div>
+        <div class="main-panel">
+            <div class="main-header">
+                <div class="main-project-name"></div>
+                <div class="main-project-description"></div>
+            </div>
+            <div class="tasks-container">
+                
+            </div>
+            <div class="add-task-button">Add Task</div>
+        </div>
+
+        <div class="project-input-pop-up">
+            <form class="project-input-form" id="project-input-form">
+                <label for="name" class="add-project-label">Project Name</label>
+                <input type="text" name="name" placeholder="Name of project" class="add-project-input" autocomplete="off" required>
+
+                <label for="description" class="add-project-label">Project Description</label>
+                <input type="text" name="description" placeholder="Description of project" class="add-project-input" autocomplete="off" required>
+              
+                <div class="button-container-form">
+                    <button  type="submit" form="project-input-form" class="add-project-form-button">Add Project</button>
+                    <div class="cancel-project-form-button">Cancel</div>
+                </div>
+            </form>
+        </div>
+
+        <div class="task-input-pop-up">
+            <form class="task-input-form" id="task-input-form">
+                <label for="name" class="add-task-label">Task Name</label>
+                <input type="text" name="name" placeholder="Name of task" class="add-task-input" autocomplete="off" required>
+
+                <label for="date" class="add-task-label">Due Date</label>
+                <input type="date" name="date" placeholder="Description of task" class="add-task-input" autocomplete="off" required>
+                
+                <label for="priority" class="add-task-label">Priority</label>
+                <select name="priority" class="add-task-input" autocomplete="off" required>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option> 
+                    <option value="high">High</option>
+                </select>
+
+                <div class="button-container-form">
+                    <button type="submit" form="task-input-form" class="add-task-form-button">Add task</button>
+                    <button type="reset" class="cancel-task-form-button">Cancel</button>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
